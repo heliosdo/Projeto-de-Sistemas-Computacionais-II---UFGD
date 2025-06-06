@@ -1,0 +1,26 @@
+import { createContext, useState } from "react";
+
+const ContextoUsuário = createContext();
+
+export default ContextoUsuário;
+
+export function ProvedorUsuário({ children }) {
+  const [usuárioLogado, setUsuárioLogado] = useState({});
+  const [confirmaçãoUsuário, setConfirmaçãoUsuário] = useState({});
+  const [mostrarModalConfirmação, setMostrarModalConfirmação] = useState(false);
+
+  return (
+    <ContextoUsuário.Provider
+      value={{
+        usuárioLogado,
+        setUsuárioLogado,
+        confirmaçãoUsuário,
+        setConfirmaçãoUsuário,
+        mostrarModalConfirmação,
+        setMostrarModalConfirmação,
+      }}
+    >
+      {children}
+    </ContextoUsuário.Provider>
+  );
+}
