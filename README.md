@@ -45,16 +45,15 @@ Este projeto utiliza **Jest** para testes unitários com suporte a **TypeScript*
 
 ## 1. Instalação das dependências
 
-```bash
-npm install --save-dev jest ts-jest @types/jest
-
+    npm install --save-dev jest ts-jest @types/jest
+    
 # 2. Inicie a configuração do Jest
-
-npx ts-jest config:init
-
+    
+    npx ts-jest config:init
+    
 # 3. Adicione o script de teste no package.json
-
-"scripts": {
-  "test": "jest"
-}
+    
+    "scripts": {
+      "test": "jest"
+    }
 
