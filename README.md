@@ -48,11 +48,11 @@ Este projeto utiliza **Jest** para testes unitários com suporte a **TypeScript*
 ```bash
 npm install --save-dev jest ts-jest @types/jest
 
-2. Inicie a configuração do Jest
+# 2. Inicie a configuração do Jest
 
 npx ts-jest config:init
 
-3. Adicione o script de teste no package.json
+# 3. Adicione o script de teste no package.json
 
 "scripts": {
   "test": "jest"
